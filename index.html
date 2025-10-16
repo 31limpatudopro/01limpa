@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vida Natural - Alimentos Saudáveis</title>
+  <meta name="description" content="Alimentos saudáveis e naturais, com informações comerciais claras e políticas transparentes.">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:"Poppins",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    :root{
+      --green:#2e7d32;
+      --green-2:#4caf50;
+      --bg:#f6faf5;
+      --card:#fff;
+      --text:#2b2b2b;
+      --muted:#6b6b6b;
+    }
+    body{background:var(--bg);color:var(--text)}
+    header{background:var(--green-2);color:#fff}
+    .wrap{max-width:1200px;margin:0 auto;padding:0 18px}
+    .top{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+    nav a{color:#fff;margin:0 10px;text-decoration:none;font-weight:600}
+    .brand{font-size:22px;font-weight:800;letter-spacing:.3px}
+    section{padding:40px 0}
+    h1,h2{color:var(--green)}
+    p{line-height:1.65}
+    .banner{
+      position:relative;overflow:hidden;border-bottom:1px solid #e8efe7
+    }
+    .hero{
+      background-image:url('https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=1600&auto=format&fit=crop');
+      background-size:cover;background-position:center;
+      color:#fff;text-align:center;padding:120px 18px
+    }
+    .hero::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.35)}
+    .hero > *{position:relative;z-index:1}
+    .hero h1{font-size:42px;margin-bottom:10px}
+    .hero p{font-size:18px;opacity:.95}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:18px}
+    .card{background:var(--card);border-radius:14px;box-shadow:0 6px 18px rgba(0,0,0,.06);padding:16px}
+    .card img{width:100%;height:160px;object-fit:cover;border-radius:10px;margin-bottom:10px}
+    .price{font-weight:700;color:var(--green);margin:6px 0 10px}
+    .btn{background:var(--green-2);color:#fff;border:0;padding:10px 14px;border-radius:8px;cursor:pointer;font-weight:700}
+    .btn:hover{filter:brightness(.95)}
+    .cols{display:grid;grid-template-columns:1fr;gap:18px}
+    @media(min-width:900px){.cols{grid-template-columns:1fr 1fr}}
+    .muted{color:var(--muted)}
+    footer{background:var(--green);color:#fff;margin-top:30px}
+    footer .wrap{padding:18px}
+    .kvs{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 0}
+    .kvs span{background:#eaf6ea;color:#215a24;border:1px solid #cfe7cf;padding:6px 10px;border-radius:999px;font-size:.88rem}
+    .legal h3{margin:16px 0 10px;color:var(--green)}
+    .legal p, .legal li{font-size:.98rem;line-height:1.7}
+    .legal ul{padding-left:20px;list-style:disc}
+    .badge{background:#eaf3ff;color:#0b4ea2;border:1px solid #cddfff;padding:4px 8px;border-radius:6px;font-size:.85rem;margin-left:8px}
+    .notice{background:#fff;border-left:4px solid var(--green-2);padding:12px 14px;border-radius:8px;margin:12px 0;color:#1d4120}
+    .consent{position:fixed;left:12px;right:12px;bottom:12px;background:#ffffff;border:1px solid #e7e7e7;border-radius:12px;padding:12px 14px;box-shadow:0 10px 26px rgba(0,0,0,.08);display:none}
+    .consent.show{display:block}
+    .consent p{font-size:.95rem;margin-bottom:8px}
+    .consent .row{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap}
+    .link{color:#1356c9;text-decoration:none}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap top">
+      <div class="brand">Vida Natural</div>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#transparencia">Transparência</a>
+        <a href="#politicas">Políticas</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="banner">
+    <div class="hero">
+      <h1>Alimentos Naturais e Selecionados</h1>
+      <p>Qualidade, rotulagem clara e operações comerciais transparentes.</p>
+    </div>
+  </section>
+
+  <main class="wrap">
+    <section id="sobre">
+      <h2>Sobre Nós</h2>
+      <p>Oferecemos alimentos saudáveis com informações claras sobre ingredientes, origem e preço. Comunicamos de forma responsável, sem promessas médicas não comprovadas e com total respeito às políticas do Google Ads.</p>
+      <div class="kvs">
+        <span>HTTPS ativo</span><span>Preços transparentes</span><span>Contato visível</span><span>Políticas claras</span>
+      </div>
+    </section>
+
+    <section id="produtos">
+      <h2>Nossos Produtos Naturais</h2>
+      <div class="grid">
+
+        <div class="card">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1576402187878-974f70c890a5?q=80&w=1200&auto=format&fit=crop" alt="Cesta de frutas orgânicas variadas">
+          <h3>Frutas Orgânicas</h3>
+          <p>Seleção sazonal com foco em frescor e procedência.</p>
+          <p class="price">A partir de R$ 19,90</p>
+          <button class="btn">Ver detalhes</button>
+        </div>
+
+        <div class="card">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200&auto=format&fit=crop" alt="Legumes e verduras frescas">
+          <h3>Legumes & Verduras</h3>
+          <p>Folhosos, raízes e hortaliças frescas para receitas diárias.</p>
+          <p class="price">A partir de R$ 5,90</p>
+          <button class="btn">Ver detalhes</button>
+        </div>
+
+        <div class="card">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1514996937319-344454492b37?q=80&w=1200&auto=format&fit=crop" alt="Grãos integrais em potes de vidro">
+          <h3>Grãos Integrais</h3>
+          <p>Arroz integral, quinoa, aveia e mais.</p>
+          <p class="price">A partir de R$ 7,90</p>
+          <button class="btn">Ver detalhes</button>
+        </div>
+
+        <div class="card">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1517260739337-6799d79e4a0a?q=80&w=1200&auto=format&fit=crop" alt="Mix de castanhas e amêndoas">
+          <h3>Oleaginosas</h3>
+          <p>Castanhas, nozes e amêndoas selecionadas.</p>
+          <p class="price">A partir de R$ 14,90</p>
+          <button class="btn">Ver detalhes</button>
+        </div>
+
+        <div class="card">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?q=80&w=1200&auto=format&fit=crop" alt="Sementes variadas em colheres de madeira">
+          <h3>Sementes</h3>
+          <p>Chia, linhaça e gergelim para complementar suas refeições.</p>
+          <p class="price">A partir de R$ 6,90</p>
+          <button class="btn">Ver detalhes</button>
+        </div>
+
+        <div class="card">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1568014952434-bdbb3e8e9f3a?q=80&w=1200&auto=format&fit=crop" alt="Pães integrais em cesta">
+          <h3>Pães Integrais</h3>
+          <p>Farinhas selecionadas e rotulagem clara.</p>
+          <p class="price">A partir de R$ 9,90</p>
+          <button class="btn">Ver detalhes</button>
+        </div>
+
+        <div class="card">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1526318472351-c75fcf070305?q=80&w=1200&auto=format&fit=crop" alt="Leites vegetais em garrafas de vidro">
+          <h3>Bebidas Vegetais</h3>
+          <p>Opções de aveia, amêndoas e castanha.</p>
+          <p class="price">A partir de R$ 12,90</p>
+          <button class="btn">Ver detalhes</button>
+        </div>
+
+        <div class="card">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1523906630133-f6934a1abf61?q=80&w=1200&auto=format&fit=crop" alt="Iogurte natural com frutas">
+          <h3>Lácteos Naturais</h3>
+          <p>Iogurtes e queijos com rotulagem simples.</p>
+          <p class="price">A partir de R$ 8,90</p>
+          <button class="btn">Ver detalhes</button>
+        </div>
+
+        <div class="card">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=1200&auto=format&fit=crop" alt="Ervas frescas e especiarias em tigelas">
+          <h3>Ervas & Especiarias</h3>
+          <p>Sabor natural para suas receitas.</p>
+          <p class="price">A partir de R$ 4,90</p>
+          <button class="btn">Ver detalhes</button>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="beneficios">
+      <h2>Benefícios da Alimentação Saudável</h2>
+      <div class="notice">
+        Comunicação responsável: não fazemos alegações de cura ou resultados garantidos. Para aconselhamento individualizado, consulte um(a) profissional de saúde.
+      </div>
+      <ul style="margin-top:8px;padding-left:18px;list-style:disc">
+        <li>Variedade de alimentos naturais para compor refeições equilibradas.</li>
+        <li>Rotulagem clara e informações objetivas.</li>
+        <li>Transparência nos preços, prazos e condições.</li>
+      </ul>
+    </section>
+
+    <section id="transparencia">
+      <h2>Transparência Comercial <span class="badge">Última atualização: 16/10/2025</span></h2>
+      <p class="muted">Esta seção resume práticas exigidas para anúncios e listagens comerciais do Google (Ads / Merchant Center), com foco em clareza e confiança.</p>
+      <ul class="kvs">
+        <span>Preços e taxas informadas</span><span>Prazos de entrega indicados</span><span>Políticas públicas</span><span>Contato do vendedor</span>
+      </ul>
+    </section>
+
+    <section id="politicas" class="legal">
+      <h2>Políticas e Informações Legais</h2>
+
+      <h3>Política de Privacidade</h3>
+      <p>Coletamos dados mínimos necessários para atendimento (ex.: nome, e-mail e mensagens do formulário). Utilizamos cookies estritamente necessários para funcionamento do site e, quando aplicável, analíticos/remarketing mediante consentimento. Você pode a qualquer momento solicitar acesso, correção ou exclusão de dados pessoais por meio do nosso canal de contato.</p>
+
+      <h3>Política de Troca e Devolução</h3>
+      <ul>
+        <li>Prazo para solicitação: 7 dias corridos após o recebimento (direito de arrependimento em compras online, quando aplicável).</li>
+        <li>Condições: produtos devem estar em sua embalagem original e sem sinais de mau uso.</li>
+        <li>Reembolso: após recebimento e conferência, processaremos o estorno por meio do mesmo método de pagamento utilizado.</li>
+        <li>Itens perecíveis: seguir orientações legais aplicáveis; em caso de não conformidade, providenciaremos substituição ou reembolso.</li>
+      </ul>
+
+      <h3>Termos de Uso e Condições Comerciais</h3>
+      <ul>
+        <li>Os preços exibidos incluem tributos quando indicado e podem variar de acordo com a região e disponibilidade.</li>
+        <li>Frete, prazos e eventuais taxas adicionais são informados antes da finalização da compra.</li>
+        <li>As descrições dos produtos são informativas e não substituem aconselhamento profissional.</li>
+        <li>Comunicação sem promessas de resultados garantidos.</li>
+      </ul>
+
+      <h3>Segurança</h3>
+      <p>Este site deve operar sob <strong>HTTPS</strong> com certificado válido. Não solicitamos dados de cartão de crédito diretamente; pagamentos, quando oferecidos, são processados por provedores certificados.</p>
+    </section>
+
+    <section id="contato">
+      <h2>Fale Conosco</h2>
+      <p>Razão social / Nome fantasia: <strong>Vida Natural Alimentos</strong></p>
+      <p>E-mail: <a class="link" href="mailto:contato@vidanatural.com.br">contato@vidanatural.com.br</a></p>
+      <p>WhatsApp: <a class="link" href="https://wa.me/5591999999999" target="_blank" rel="noopener">+55 (91) 99999-9999</a></p>
+      <p>Endereço comercial (exemplo): Av. Exemplo, 123, Bairro Centro — Cidade/UF — Brasil</p>
+      <p class="muted">Atualize os dados acima com as informações reais do seu negócio antes de anunciar.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>© 2025 Vida Natural - Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Consentimento de cookies simples -->
+  <div class="consent" id="consent">
+    <p>Usamos cookies essenciais para funcionamento do site e, opcionalmente, cookies analíticos. <a class="link" href="#politicas">Saiba mais</a>.</p>
+    <div class="row">
+      <button class="btn" onclick="optConsent(true)">Aceitar</button>
+      <button class="btn" onclick="optConsent(false)">Recusar</button>
+    </div>
+  </div>
+
+  <script>
+    // Consentimento simples (exemplo, não substitui CMP completa)
+    const box = document.getElementById('consent');
+    const key = 'vn_cookie_consent_v1';
+    const saved = localStorage.getItem(key);
+    if(!saved){ box.classList.add('show'); }
+    function optConsent(agree){ localStorage.setItem(key, agree ? 'accepted' : 'denied'); box.classList.remove('show'); }
+  </script>
+</body>
+</html>
